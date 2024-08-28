@@ -10,7 +10,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Home Page"),
       ),
-      drawer: CustomDrawer(),
+      drawer: const CustomDrawer(),
     );
   }
 }

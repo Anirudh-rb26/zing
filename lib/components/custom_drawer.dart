@@ -6,8 +6,8 @@ class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
 
   void logout() {
-    final _auth = AuthServices();
-    _auth.signOut();
+    final auth = AuthServices();
+    auth.signOut();
   }
 
   @override
