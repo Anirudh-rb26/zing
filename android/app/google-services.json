@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "872203166423",
+    "project_id": "zing-chat-flutter",
+    "storage_bucket": "zing-chat-flutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:872203166423:android:d87165d7461fb4f5594692",
+        "android_client_info": {
+          "package_name": "com.example.zing"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARmZSPWNJp4X69RwD0iSykH3KkHZipEyA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
