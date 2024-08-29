@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:zing/auth/auth_services.dart';
+import 'package:zing/services/auth/auth_services.dart';
 import 'package:zing/pages/settings_page.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
 
   void logout() {
-    final auth = AuthServices();
+    final auth = AuthService();
     auth.signOut();
   }
 

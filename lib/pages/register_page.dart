@@ -1,6 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
-import 'package:zing/auth/auth_services.dart';
+import 'package:zing/services/auth/auth_services.dart';
 import 'package:zing/components/custom_button.dart';
 import 'package:zing/components/custom_textfeild.dart';
 
@@ -17,7 +17,7 @@ class RegisterPage extends StatelessWidget {
 
 // Register method
   void register(BuildContext context) {
-    final auth = AuthServices();
+    final auth = AuthService();
     // If passwords match
     if (_passwordController.text == _confirmPasswordController.text) {
       try {
@@ -74,7 +74,7 @@ class RegisterPage extends StatelessWidget {
             const SizedBox(height: 25),
 
             // Email Textfeild
-            CustomTextFeild(
+            CustomTextField(
               hintText: "Email",
               obscureText: false,
               controller: _emailController,
@@ -83,7 +83,7 @@ class RegisterPage extends StatelessWidget {
             const SizedBox(height: 20),
 
             // Password Textfeild
-            CustomTextFeild(
+            CustomTextField(
               hintText: "Password",
               obscureText: true,
               controller: _passwordController,
@@ -91,7 +91,7 @@ class RegisterPage extends StatelessWidget {
 
             const SizedBox(height: 10),
 
-            CustomTextFeild(
+            CustomTextField(
               hintText: "Confirm Password",
               obscureText: true,
               controller: _confirmPasswordController,

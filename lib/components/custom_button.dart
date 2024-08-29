@@ -20,8 +20,9 @@ class CustomButton extends StatelessWidget {
           child: Text(
             text,
             style: TextStyle(
-                color: Theme.of(context).colorScheme.secondary,
-                fontWeight: FontWeight.bold),
+              color: Theme.of(context).colorScheme.inversePrimary,
+              fontWeight: FontWeight.bold,
+            ),
           ),
         ),
       ),

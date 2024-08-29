@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:zing/auth/auth_services.dart';
+import 'package:zing/services/auth/auth_services.dart';
 import 'package:zing/components/custom_button.dart';
 import 'package:zing/components/custom_textfeild.dart';
 
@@ -15,7 +15,7 @@ class LoginPage extends StatelessWidget {
 // Login Method
   void login(BuildContext context) async {
     // Get Auth service
-    final authService = AuthServices();
+    final authService = AuthService();
 
     // Try Login
     try {
@@ -61,7 +61,7 @@ class LoginPage extends StatelessWidget {
             const SizedBox(height: 25),
 
             // Email Textfeild
-            CustomTextFeild(
+            CustomTextField(
               hintText: "Email",
               obscureText: false,
               controller: _emailController,
@@ -70,7 +70,7 @@ class LoginPage extends StatelessWidget {
             const SizedBox(height: 10),
 
             // Password Textfeild
-            CustomTextFeild(
+            CustomTextField(
               hintText: "Password",
               obscureText: true,
               controller: _passwordController,

@@ -1,14 +1,18 @@
 import 'package:flutter/material.dart';
 
-class CustomTextFeild extends StatelessWidget {
+class CustomTextField extends StatelessWidget {
   final String hintText;
   final bool obscureText;
   final TextEditingController controller;
-  const CustomTextFeild(
-      {super.key,
-      required this.hintText,
-      required this.obscureText,
-      required this.controller});
+  final FocusNode? focusNode;
+
+  const CustomTextField({
+    super.key,
+    required this.hintText,
+    required this.obscureText,
+    required this.controller,
+    this.focusNode,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -17,6 +21,7 @@ class CustomTextFeild extends StatelessWidget {
       child: TextField(
         obscureText: obscureText,
         controller: controller,
+        focusNode: focusNode,
         decoration: InputDecoration(
           enabledBorder: OutlineInputBorder(
             borderSide:
